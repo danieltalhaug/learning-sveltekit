@@ -2,7 +2,7 @@ export enum Routes {
     HOME = '/',
     ABOUT = '/about',
     CONTACT = '/contact',
-    RSS = '/RSS',
+    RSS = '/rss.xml',
 }
 
 export enum Themes {
