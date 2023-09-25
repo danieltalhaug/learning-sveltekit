@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/kit/vite';
-import { mdsvex } from 'mdsvex';
+import { mdsvex, escapeSvelte } from 'mdsvex';
+import shiki from 'shiki';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -13,6 +14,14 @@ const config = {
 		/** @type {import('mdsvex').MdsvexOptions} */
 		mdsvex({
 			extensions: ['.md'],
+			highlight: {
+				highlighter: async (code, lang = 'text') => {
+					const highlighter = await shiki.getHighlighter({theme: 'poimandres',});
+					const html = highlighter.codeToHtml(code, { lang });
+
+					return `{@html \`${escapeSvelte(html)}\`}`;
+				}
+			}
 		})
 	],
 

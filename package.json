@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"lucide-svelte": "^0.279.0"
+		"lucide-svelte": "^0.279.0",
+		"shiki": "^0.14.4"
 	}
 }
