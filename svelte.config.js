@@ -14,6 +14,9 @@ const config = {
 		/** @type {import('mdsvex').MdsvexOptions} */
 		mdsvex({
 			extensions: ['.md'],
+			layout: {
+				_: '/src/markdown.svelte',
+			},
 			highlight: {
 				highlighter: async (code, lang = 'text') => {
 					const highlighter = await shiki.getHighlighter({theme: 'poimandres',});
