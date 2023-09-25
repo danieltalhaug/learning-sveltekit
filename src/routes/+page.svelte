@@ -2,6 +2,7 @@
     import * as config from '$lib/config';
     import { formatDate } from '$lib/utils';
     import { ArrowRight, CalendarDays } from 'lucide-svelte';
+    import Hero from '$lib/components/Hero.svelte';
 
     export let data;
 </script>
@@ -11,16 +12,7 @@
 </svelte:head>
 
 <article>
-    <section>
-        <div class="hero h-96 bg-base-200">
-            <div class="hero-content text-center">
-                <div class="max-w-md">
-                    <h1 class="text-5xl font-bold">Welcome to my blog</h1>
-                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-              </div>
-            </div>
-        </div>
-    </section>
+    <Hero title="My Blog" subtitle="This is my blog hello ding dong" />
     <ul class="flex flex-col gap-8">
         {#each data.posts as post}
             <li class="flex flex-col gap-2 border-2 bg-base-100 border-base-300 rounded-xl p-12 shadow-xl">
