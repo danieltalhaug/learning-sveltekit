@@ -1,7 +1,7 @@
 ---
 title: First post
 description: Shabladong
-date: '2023'
+date: '2023-4-14'
 ---
 
 # Hello ding dong
