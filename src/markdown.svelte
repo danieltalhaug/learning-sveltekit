@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
-    import { h1 } from '$lib/components/md/index';
+    import { h1, h2, p } from '$lib/components/md/index';
 
-    export { h1 };
+    export { h1, h2, p };
 </script>
 
 <slot />
