@@ -6,8 +6,8 @@
     export let post: Post;
 </script>
 
-<li class="card card-normal card-bordered card-body bg-base-100 shadow-xl">
-    <h2 class="card-title text-2xl text-secondary">{post.title}</h2>
+<li class="card card-normal card-bordered card-body bg-base-100 shadow-lg">
+    <h2 class="text-3xl text-secondary font-medium">{post.title}</h2>
     <p class="flex gap-2 text-sm text-accent items-center">
         <CalendarDays size="16" />
         {formatDate(post.date)}
