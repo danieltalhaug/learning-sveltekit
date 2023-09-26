@@ -13,7 +13,12 @@
     <ul class="dropdown-content z-[1] mt-0 p-2 shadow bg-base-100 w-52">
         {#each Object.values(Themes) as theme}
         <li>
-            <button data-set-theme={theme}>{theme}</button>
+            <button
+                data-set-theme={theme}
+                data-act-class="btn-primary"
+            >
+                {theme}
+            </button>
         </li>
         {/each}
     </ul>
