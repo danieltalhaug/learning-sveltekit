@@ -5,7 +5,7 @@
     export let posts: Post[];
 </script>
 
-<ul class="flex flex-col gap-8">
+<ul class="flex flex-col gap-8 w-full">
     {#each posts as post}
         <BlogPostCard {post} />
     {/each}

@@ -1,7 +1,7 @@
 <script lang="ts">
     import * as config from '$lib/config';
-    import Hero from '$lib/components/Hero.svelte';
     import BlogPostList from '$lib/components/BlogPostList.svelte'
+    import BioCard from '$lib/components/BioCard.svelte';
 
     export let data;
 </script>
@@ -11,6 +11,8 @@
 </svelte:head>
 
 <article>
-    <Hero title="My Blog" subtitle="This is my blog hello ding dong" />
-    <BlogPostList posts={data.posts} />
+    <section class="flex flex-col-reverse lg:flex-row gap-8 pt-12">
+        <BlogPostList posts={data.posts} />
+        <BioCard />
+    </section>
 </article>
