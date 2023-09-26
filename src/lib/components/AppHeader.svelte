@@ -16,12 +16,6 @@
         <section>
             <ul class="menu menu-horizontal px-1">
                 <li>
-                    <a href={Routes.ABOUT}>About</a>
-                </li>
-                <li>
-                    <a href={Routes.CONTACT}>Contact</a>
-                </li>
-                <li>
                     <a href={Routes.RSS} target="_blank">RSS</a>
                 </li>
     
