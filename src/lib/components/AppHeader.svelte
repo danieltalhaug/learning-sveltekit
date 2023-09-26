@@ -1,7 +1,8 @@
 <script lang="ts">
     import { title } from '$lib/config';
-    import { Routes, Themes } from '$lib/enum'
+    import { Routes } from '$lib/enum'
     import Container from '$lib/components/Container.svelte';
+    import ThemeSelector from '$lib/components/ThemeSelector.svelte';
 </script>
 
 <Container>
@@ -25,13 +26,7 @@
                 </li>
     
                 <li>
-                    <details class="dropdown dropdown-end">
-                        <summary>Theme</summary>
-                        <ul class="dropdown-content z-[1] mt-0 p-2 shadow bg-base-100 w-52">
-                            <li><span>{Themes.LIGHT}</span></li>
-                            <li><span>{Themes.DARK}</span></li>
-                        </ul>
-                    </details>
+                    <ThemeSelector />
                 </li>
             </ul>
         </section>
