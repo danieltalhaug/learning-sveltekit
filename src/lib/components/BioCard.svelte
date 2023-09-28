@@ -3,7 +3,7 @@
 </script>
 
 <Card element="aside" color="bg-primary">
-    <div class="flex flex-col gap-4 w-full lg:max-w-sm text-white">
+    <div class="flex flex-col gap-4 w-full lg:w-80 lg:max-w-sm text-white">
         <div class="avatar self-center mb-2">
             <div class="w-24 bg-secondary rounded-full">
                 <img src="/robot.png" alt="Robot avatar" />
